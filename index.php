@@ -64,7 +64,7 @@ if( $rates ) : ?>
             <?php
                 $cost           = $rate['cost'] * $weight;
                 $insurance_cost = $insurance ? $cost * 0.0025 : 0;
-                $total          = $cost + $insurance;
+                $total          = $cost + $insurance_cost;
                 $cost           = 'Rp' . number_format( $cost );
                 $insurance_cost = 'Rp' . number_format( $insurance_cost );
                 $total          = 'Rp' . number_format( $total );
